@@ -2,3 +2,35 @@
 *.log
 *.tmp
 *.bak
+.env
+
+# SSH keys
+*.pem
+*.ppk
+id_*
+*.pub
+
+# Azure CLI credentials and config
+.azure/
+
+# Large data files that don't belong in git
+*.zip
+*.tar
+*.gz
+*.nc
+*.hdf5
+
+# Python/conda
+__pycache__/
+*.pyc
+.conda/
+envs/
+
+# Slurm job outputs (often large)
+*.out
+*.err
+slurm-*.out
+
+# Scratch directories
+scratch/
+*.scratch
