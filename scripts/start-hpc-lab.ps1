@@ -56,8 +56,6 @@ $CTL_IP
 
 # Wait a short moment before trying SSH.
 # A VM can show as running before SSH is actually ready.
-Start-Sleep -Seconds 10
-
 # Try SSH to the controller repeatedly until it responds.
 # This is safer than assuming SSH is ready immediately after the VM starts.
 for ($i = 1; $i -le 24; $i++) {
